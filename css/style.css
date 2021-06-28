@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   text-transform: capitalize;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #F6F6F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.temperature {
+    max-width: 500px;
+    width: 94%;
+    margin: 0 auto;
+    height: auto;
+    background: #fff;
+    border: 2px solid #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.temperature h1 {
+    font-family: 'Akaya Kanadaka', cursive;
+    padding-bottom: 15px;
+}
+
+.tempImage {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 15px;
+    border-radius: inherit;
+}
+
+.tempImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.userInput {
+    width: 100%;
+    height: 45px;
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.userInput input{
+    width: 65%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0 10px;
+    font-style: italic;
+}
+
+.select{
+    width: 120px;
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    border-radius: 5px;
+}
+
+.select span {
+    width: 100%;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 8px 10px;
+    text-align: left;
+    display: none;
+    background: linear-gradient(#dfdfdf, #f0f0f0);
+    cursor: pointer;
+}
+
+.select span:hover {
+    background: #d6d2d2;
+}
+
+.select span p {
+    font-size: 15px;
+    font-weight: 400;
+    float: right;
+    font-style: normal;
+}
+
+.active {
+    display: block !important;
+}
+
+#convert {
+    margin: 10px;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: #fff;
+    background: #000;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-style: italic;
+}
+
+#convert:hover {
+    color: #000;
+    background: #fff;
+    font-weight: 500;
+    border: 2px solid #000;
+}
+
+.wrapper {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.wrapper h2 {
+    font-family: 'Akaya Kanadaka', cursive;
+    padding-bottom: 15px;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: none !important;
+}
+
+tr {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+td {
+    display: block;
+    width: 33.3333%;
+    padding: 5px;
+    font-size: 14px;
+}
+
+td span{
+    font-style: italic;
+}
